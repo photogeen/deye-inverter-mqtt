@@ -61,6 +61,9 @@ ac_apparent_power_sensor = SingleRegisterSensor("AC Apparent Power", 0x54, 0.1, 
 ac_active_power_sensor = SingleRegisterSensor("AC Active Power", 0x56, 0.1, mqtt_topic_suffix='ac/active_power')
 ac_reactive_power_sensor = SingleRegisterSensor("AC Reactive Power", 0x58, 0.1, mqtt_topic_suffix='ac/reactive_power')
 
+# Battery sensors
+
+
 # Temperature sensors
 radiator_temp_sensor = SingleRegisterSensor("Radiator temperature", 0x5a, 0.1,
                                             offset=-100, mqtt_topic_suffix='radiator_temp')
